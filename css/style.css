@@ -9,7 +9,7 @@
   --off-white:      #faf8f7;
   --just-white:     #fff;
   --grey:           #bababa;
-  --grey1:          #7C7C7A;
+  --black-footer:   #201E1C;
   --bgblue:         #360B90; 
   --black:          #323232;
 }
@@ -254,11 +254,14 @@ main {
 }
 .logo {
   position: absolute;
-  width: 40.57px;
-  height: 24.01px;
+  width: 50px;
+  height: 50px;
   left: calc(50% - 20px);
-  top: -10px;
+  top: -25px;
   background-image: url("../assets/icons/logo.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .detail-title {
   width: 90%;
@@ -286,7 +289,7 @@ main {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  height: 152px;
+  height: 220px;
   margin: 15px auto;
   padding: 15px;
   background-color: var(--warm-black);
@@ -338,23 +341,32 @@ main {
   background-repeat: no-repeat;
 }
 .card-title {
-  margin-bottom: 15px;
+  margin-bottom: 15px ;
   font-size: 1.8rem;
+  text-align: center;
   font-weight: bold;
   line-height: 1.8rem;
   color: var(--just-white);
 }
 .card-body {
   font-size: 1.4rem;
+  text-align: center;
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
 }
+.img-container img {
+  position: relative;
+  top: 40px;
+  height:200px;
+  width:350px;
+  z-index: 1;
+}
+
 .img-container {
   width: 100%;
-  min-width: 320px;
   height: 50vh;
-  background-image: url("../assets/img/img-tecnologies2.jpg");
+  background-image: url("../assets/img/img-tecnologies2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -362,7 +374,8 @@ main {
 }
 .img-container h2 {
   padding-top: 60px;
-  font-size: 2.4rem;
+  position: relative  ;
+  font-size: 3.2rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--just-white);
@@ -390,8 +403,8 @@ main {
   color: #757575;
 }
 .curse-container--slider {
+  justify-content: left;
   display: flex;
-  gap: 50px; 
   height: 346px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -454,14 +467,14 @@ main {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("../assets/icons/orange-right-arrow.svg");
+  background-image: url("../assets/icons/arrow-right.svg");
   vertical-align: text-bottom;
 }
 footer {
   display: flex;
   width: 100%;
   height: 150px;
-  background-color: var(--grey1);
+  background-color: var(--black-footer);
 }
 footer section {
   display: flex;
@@ -469,16 +482,86 @@ footer section {
   align-items: center;
   width: 50%;
 }
-.left ul {
-  font-size: 1.4rem;
-  font-weight: 500px;
-  line-height: 1.8rem;
-  list-style: none;
-}
 .left li {
-  margin: 10px 0;
+  margin: 10px 0px;
 }
-.left a {
-  text-decoration: none;
-  color: var(--just-white);
+.facebook span{
+  display: flex;
+  width:  30px;
+  height: 30px;
+  margin-left: 7px;
+  background-image: url("../assets/icons/facebook.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.facebook span{
+  display: flex;
+  width:  30px;
+  height: 30px;
+  margin-left: 7px;
+  background-image: url("../assets/icons/facebook.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.linkedin span{
+  display: flex;
+  width:  30px;
+  height: 30px;
+  margin-left: 7px;
+  background-image: url("../assets/icons/linkedin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.twitter span{
+  display: flex;
+  width:  30px;
+  height: 30px;
+  margin-left: 7px;
+  background-image: url("../assets/icons/twitter.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.github span{
+  display: flex;
+  width:  30px;
+  height: 30px;
+  margin-left: 7px;
+  background-image: url("../assets/icons/github.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.youtube span{
+  display: flex;
+  width:  30px;
+  height: 30px;
+  margin-left: 7px;
+  background-image: url("../assets/icons/youtube.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portafolio span{
+  display: flex;
+  width:  30px;
+  height: 30px;
+  margin-left: 7px;
+  background-image: url("../assets/icons/portafolio.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact-me span{
+  display: flex;
+  width:  50px;
+  height: 50px;
+  margin-left: 7px;
+  background-image: url("../assets/icons/contact-me.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
